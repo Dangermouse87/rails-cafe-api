@@ -14,3 +14,8 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
+
+# Ensure plural for cafe controller is cafes
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.plural "cafe", "cafes"
+end
